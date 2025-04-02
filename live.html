@@ -1,0 +1,27 @@
+<!-- Previous head/header content same as homepage -->
+
+<section class="live-classes">
+    <h2>Upcoming Live Classes</h2>
+    
+    <div class="class-schedule">
+        <div class="class-card">
+            <div class="class-info">
+                <h3>Watercolor Painting</h3>
+                <p class="tutor">With: Sarah Johnson</p>
+                <p class="time">Today, 3:00 PM EST</p>
+                <p class="duration">60 minutes</p>
+            </div>
+            <button class="join-btn">Join Live Class</button>
+        </div>
+        <!-- More class cards -->
+    </div>
+</section>
+
+<script>
+    document.querySelectorAll('.join-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // In a real app, this would connect to a live video service
+            alert('Connecting to live class... (This would launch the video session in a real implementation)');
+        });
+    });
+</script>

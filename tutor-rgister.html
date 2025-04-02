@@ -1,0 +1,49 @@
+<!-- Previous head/header content same as homepage -->
+
+<section class="tutor-registration">
+    <h2>Become a Hobbitant Tutor</h2>
+    
+    <form id="tutor-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="expertise">Primary Hobby Expertise</label>
+            <select id="expertise" required>
+                <option value="">Select your expertise</option>
+                <option value="painting">Painting</option>
+                <option value="photography">Photography</option>
+                <option value="music">Music</option>
+                <option value="cooking">Cooking</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="experience">Years of Experience</label>
+            <input type="number" id="experience" min="1" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="bio">Short Bio</label>
+            <textarea id="bio" rows="4" required></textarea>
+        </div>
+        
+        <button type="submit">Apply to Become a Tutor</button>
+    </form>
+</section>
+
+<script>
+    document.getElementById('tutor-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you for your application! We will review your information and get back to you soon.');
+        this.reset();
+    });
+</script>
